@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>palindrome number</title>
+</head>
+<body>
+	<script>
+		var p=121;
+		var x=0;
+		while(p!=0){
+			var y=p%10;
+			var x=x*10+y;
+			var p=p/10;
+		}
+          
+		if(x==p)
+			document.write("This number is palindrome");
+		else
+			document.write("This number is not palindrome");
+	</script>
+</body>
+</html>
